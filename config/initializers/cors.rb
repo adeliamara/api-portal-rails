@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'https://portal-react-vemh.vercel.app', 'http://localhost:5173' # Ou qualquer outra origem que você esteja usando
+    origins '*' # Ou qualquer outra origem que você esteja usando
     
     resource "*",
       headers: :any,
